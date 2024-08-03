@@ -17,7 +17,6 @@ import { useNavigate } from "react-router-dom";
 import SearchQuery from "../feature/Search/SearchQuery";
 import CategoriesMenu from "../feature/Categories/CategoriesMenu";
 import { Stack } from "@mui/material";
-import { common } from "@mui/material/colors";
 
 export default function MenuDrawer() {
   const [open, setOpen] = React.useState(false);
