@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import Spinner from "../../ui/Spinner";
 import { useGetProducts } from "../Store/useGetProducts";
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Grid, Stack, Typography } from "@mui/material";
 import StyledContainer from "../../ui/Container";
 import CollectionItem from "../../ui/CollectionItem";
 import GoBackButton from "../../ui/GoBackButton";
+import TopSection from "../../ui/TopSection";
 
 function CollectionWrapper() {
   const { collectionName } = useParams();
@@ -16,7 +17,7 @@ function CollectionWrapper() {
 
   if (isLoading) return <Spinner />;
   return (
-    <Box component="section">
+    <TopSection>
       <StyledContainer>
         <Stack direction="row" alignItems="center" spacing={2}>
           <GoBackButton />
@@ -37,7 +38,7 @@ function CollectionWrapper() {
           ))}
         </Grid>
       </StyledContainer>
-    </Box>
+    </TopSection>
   );
 }
 
