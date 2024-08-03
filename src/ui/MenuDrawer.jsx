@@ -7,6 +7,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import CategoryIcon from "@mui/icons-material/Category";
 
 import HomeIcon from "@mui/icons-material/Home";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -14,6 +15,9 @@ import StoreIcon from "@mui/icons-material/Store";
 import AccountIcon from "@mui/icons-material/AccountCircle";
 import { useNavigate } from "react-router-dom";
 import SearchQuery from "../feature/Search/SearchQuery";
+import CategoriesMenu from "../feature/Categories/CategoriesMenu";
+import { Stack } from "@mui/material";
+import { common } from "@mui/material/colors";
 
 export default function MenuDrawer() {
   const [open, setOpen] = React.useState(false);
@@ -75,6 +79,10 @@ export default function MenuDrawer() {
           </ListItem>
         ))}
       </List>
+      <Stack direction="row" px={2} gap={2.8}>
+        <CategoryIcon sx={{ color: "common.white" }} />
+        <CategoriesMenu />
+      </Stack>
     </Box>
   );
 
