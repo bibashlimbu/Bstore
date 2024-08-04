@@ -18,7 +18,7 @@ function ErrorFallback({ error, resetErrorBoundary }) {
     <TopSection>
       <StyledContainer>
         <Stack alignItems="center" spacing={2}>
-          <Image src="somethingWentWrong.svg" alt="somethingWentWrong" />
+          <Image src="/somethingWentWrong.svg" alt="somethingWentWrong" />
           <Typography
             variant="h4"
             sx={{

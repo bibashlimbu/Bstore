@@ -24,7 +24,7 @@ function SearchList() {
   if (!searchedProducts.length)
     return (
       <NotFound
-        src={"no-item-found.svg"}
+        src={"/no-item-found.svg"}
         alt="no item found"
         content="product"
       />

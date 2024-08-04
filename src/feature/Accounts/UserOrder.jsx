@@ -10,13 +10,7 @@ function UserOrder() {
   if (isLoading) return <Spinner />;
   if (!orders.length)
     return (
-      <NotFound
-        src={
-          "https://hyhgcdijziponqatqzaj.supabase.co/storage/v1/object/public/NotFound-img/no-order.svg"
-        }
-        alt={"No Order"}
-        content={"Order"}
-      />
+      <NotFound src={"/no-order.svg"} alt={"No Order"} content={"Order"} />
     );
 
   return (

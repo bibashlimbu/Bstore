@@ -21,7 +21,7 @@ function EmptyCart() {
     <TopSection>
       <StyledContainer>
         <Stack alignItems="center" spacing={2}>
-          <Image src="empty-cart.svg" alt="empty-cart" />
+          <Image src="/empty-cart.svg" alt="empty-cart" />
           <Typography
             variant="h4"
             sx={{

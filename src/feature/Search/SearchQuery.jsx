@@ -53,6 +53,7 @@ function SearchQuery({ display }) {
   function handleSubmit(e) {
     e.preventDefault();
     if (query.length < 3) return;
+
     searchParams.set("q", query);
     setSearchParams(searchParams);
     navigate(`/search?q=${query}`, { replace: true });
