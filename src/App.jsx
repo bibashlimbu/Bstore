@@ -35,8 +35,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<AppLayout />}>
-            <Route index element={<Navigate replace to="home" />} />
-            <Route path="home" element={<Home />} />
+            <Route index element={<Home />} />
             <Route path="cart" element={<Cart />} />
             <Route path="order" element={<Order />} />
             <Route path="order/:customerId" element={<OrderDetails />} />
