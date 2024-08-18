@@ -127,7 +127,7 @@ function UpdatePasswordForm() {
         </FormControl>
       </Stack>
       <Box mt={2}>
-        <Button variant="contained" type="submit">
+        <Button variant="contained" type="submit" disabled={isPending}>
           Update Password
         </Button>
       </Box>
